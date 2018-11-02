@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css">
+    #map{
+      height:auto;
+      width:400px%;
+      float: right;
+      margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+	<header >
+		<h1 class="header">sendIT</h1>
+		<nav>
+			<ul>
+				<li><a href="#">List of orders</a></li>
+				<li><a href="#">Orders delivered</li>
+				<li><a href="#">Orders in transit</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="row">
+			<div class="recipient">
+			<form>
+				<label>Recipient's Name</label>
+				<input type="text" name="name" placeholder="Full Name">
+
+				<label>Ship From</label>
+				<input type="text" name="from" placeholder="My location">
+
+				<label>Weight</label>
+				<select name="weight">
+					<option value="1">1kg</option>
+					<option value="2">2kg</option>
+					<option value="3">3kg</option>
+					<option value="4">4kg</option>
+				</select>
+				
+				<label>Town/ City</label>
+				<input type="text" name="town" placeholder="City/Town">
+
+				<label>Country</label>
+				<input type="text" name="Country" placeholder="Country">
+
+				<label>Postcode</label>
+				<input type="text" name="postcode" placeholder="Postcode">
+
+				<label>Phone Number</label>
+				<input type="text" name="phone" placeholder="Phone Number">
+
+				<label>Price</label>
+				<input type="text" name="phone" disabled>
+
+
+				<input type="submit" name="submit" value="Send">
+			</form>
+		</div>
+		<div id="map">
+			
+		</div>
+		</section>
+		
+		
+	</main>
+	</body>
+
+	<footer>
+          <div class="footer">
+            <a href="homepage.html"><p>© 2018 Copyright:sendIT</p></a>
+          </div>
+        </footer>
+
+
+</html>
+
+<script>
+        function initMap(){
+            var options = {
+                zoom:8,
+                center:{lat:1.5035, lng:-29.6325}
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+        </script>
+    
+   
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCluMaZTeYeWEoDJGnentr1lBlw0jyufvE&callback=initMap"
+   async defer>
+   	
+   </script>
+    
+            
