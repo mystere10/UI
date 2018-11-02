@@ -60,6 +60,15 @@ img {
 	align-items: center;
 }
 
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
 .form form{
 	background-color: #a29bfe;
 	padding: 30px;
@@ -259,3 +268,4 @@ th, td{
 	text-align: left;
 	border-bottom: 1px solid #ddd;
 }
+
