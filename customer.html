@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<style type="text/css">
@@ -14,55 +16,33 @@
 </style>
 </head>
 <body>
-	<header >
-		<h1 class="header"><a href="customer.html">sendIT</a></h1>
-		<nav>
-			<ul>
-				<li><a href="your_orders.html">List of orders</a></li>
-				<li><a href="delivered.html">Orders delivered</li>
-				<li><a href="transit.html">Orders in transit</a></li>
-				<li><a href="#">Logout</a></li>
-			</ul>
-		</nav>
+	<header class="header">
+		<a href="customer.html" class="logo">sendIT</a>
+		<div class="nav">
+			<a href="your_orders.html">List of orders</a>
+			<a href="delivered.html">Orders delivered</a>
+			<a href="transit.html">Orders in transit</a>
+			<a href="#">Logout</a>
+		</div>
 	</header>
+
+	<div class="sidenav">
+  		<a href="makeorder.html">Create order</a>
+  		<a href="your_orders.html">List orders</a>
+	</div>
 
 	<main>
 		<section class="row">
-			<div class="recipient">
-			<form>
-				<label>Recipient's Name</label>
-				<input type="text" name="name" placeholder="Full Name">
-
-				<label>Ship From</label>
-				<input type="text" name="from" placeholder="My location">
-
-				<label>Weight</label>
-				<select name="weight">
-					<option value="1">1kg</option>
-					<option value="2">2kg</option>
-					<option value="3">3kg</option>
-					<option value="4">4kg</option>
-				</select>
-				
-				<label>Town/ City</label>
-				<input type="text" name="town" placeholder="City/Town">
-
-				<label>Country</label>
-				<input type="text" name="Country" placeholder="Country">
-
-				<label>Postcode</label>
-				<input type="text" name="postcode" placeholder="Postcode">
-
-				<label>Phone Number</label>
-				<input type="text" name="phone" placeholder="Phone Number">
-
-				<label>Price</label>
-				<input type="text" name="phone" disabled>
-
-
-				<input type="submit" name="submit" value="Send">
-			</form>
-		</div>
+			<div class="person">
+				<img src="head2.png">
+			</div>	
+			<div class="services">
+				<a href="your_orders.html"><img src="orders.png">Orders</a>
+				<a href="transit.html"><img src="transit.jpg">Orders In transit</a>
+				<a href="delivered.html"><img src="delivered.png">Orders delivered</a>
+			</div>
+			
+			
 		<div id="map">
 			
 		</div>
@@ -82,7 +62,7 @@
 </html>
 
 <script>
-        function initMap(){
+/*        function initMap(){
             var options = {
                 zoom:8,
                 center:{lat:1.5035, lng:-29.6325}
@@ -95,7 +75,7 @@
    
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCluMaZTeYeWEoDJGnentr1lBlw0jyufvE&callback=initMap"
    async defer>
-   	
+   	 
    </script>
     
             
