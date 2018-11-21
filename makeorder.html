@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<style type="text/css">
-    #map{
-      height:auto;
-      width:400px%;
-      float: right;
-      margin-top: 20px;
-    }
-</style>
+	<title>Admin</title>
 </head>
 <body>
 	<header class="header">
@@ -51,37 +40,35 @@
 
 <!-- Content -->
 	<main class="s-layout__content">
-		<a href="your_orders.html"><img src="orders.png">Orders</a>
-		<a href="transit.html"><img src="transit.jpg">Orders In transit</a>
-		<a href="delivered.html"><img src="delivered.png">Orders delivered</a>
+		<div class="">
+			<p><label for="name">Reciepient Name</label></p>
+    		<p><input type="text" id="name" name="firstname" placeholder="Reciepint name.."></p>
+
+    		<p><label for="weight">Weight</label></p>
+    		<p><input type="number" id="weight" name="weright" placeholder="The weight of your parcel..">Kg</p>
+
+    		<p><label for="Detinastion Town">Destination town</label></p>
+    		<p><input type="text" id="weight" name="weright" placeholder="The weight of your parcel.."></p>
+
+    		<p><label for="Detinastion Country">Destination country</label></p>
+    		<p><input type="text" id="weight" name="weight" placeholder="The destination country."></p>
+
+    		<p><label for="Postcode">Postcode</label></p>
+    		<input type="text" id="postcode" name="postcode" placeholder="Postcode..">
+
+    		<p><label for="Phone">Phone</label></p>
+    		<p><input type="text" id="phone" name="phone" placeholder="Your phone number"></p>
+  			<br />
+    		<input type="submit" value="Submit" onclick="alert("Order submitted")">
+    	</div>
+
 	</main>
 </div>
 	
-
 	<footer>
           <div class="footer">
             <a href="homepage.html"><p>© 2018 Copyright:sendIT</p></a>
           </div>
-        </footer>
-
-
+    </footer>
+</body>
 </html>
-
-<script>
-/*        function initMap(){
-            var options = {
-                zoom:8,
-                center:{lat:1.5035, lng:-29.6325}
-            }
-
-            var map = new google.maps.Map(document.getElementById('map'), options);
-        }
-        </script>
-    
-   
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCluMaZTeYeWEoDJGnentr1lBlw0jyufvE&callback=initMap"
-   async defer>
-   	 
-   </script>
-    
-            
