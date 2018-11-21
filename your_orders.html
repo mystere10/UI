@@ -11,21 +11,38 @@
 			<a href="your_orders.html">List of orders</a>
 			<a href="delivered.html">Orders delivered</a>
 			<a href="transit.html">Orders in transit</a>
-			<a href="#">Logout</a>
+			<a href="login.html">Logout</a>
 		</div>
 	</header>
 
-	<div class="sidenav">
-  		<a href="makeorder.html">Create order</a>
-  		<a href="your_orders.html">List orders</a>
-	</div>
+	<div class="s-layout">
+	<!-- Sidebar -->
+	<div class="s-layout__sidebar">
+  	<a class="s-sidebar__trigger" href="#0">
+     <i class="fa fa-bars"></i>
+  	</a>
 
-	<!-- SAMPLE STATIC DATA -->
+  	<nav class="s-sidebar__nav">
+     <ul>
+        <li>
+           <a class="s-sidebar__nav-link" href="makeorder.html"">
+             <em>Make order</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="your_orders.html">
+             <em>My Orders</em>
+           </a>
+        </li>
+     </ul>
+  </nav>
+</div>
 
-	<main>
-		<div class="table">
-			<table>
-				<thead>
+<!-- Content -->
+	<main class="s-layout__content2">
+			<div class="table">
+				<table>
+				<tr>
 					<th>Sender Name</th>
 					<th>Recipient Name</th>
 					<th>Weight</th>
@@ -36,9 +53,9 @@
 					<th>Status</th>
 					<!-- <th>Change Status</th> -->
 					<th>View status</th>
-				</thead>
+				</tr>
 
-				<tbody>
+				<tr>
 					<td>John</td>
 					<td>John</td>
 					<td>12kg</td>
@@ -48,13 +65,21 @@
 					<td>2000Rwf</td>
 					<td>In transit</td>
 					<!-- <td><button class="transit"><a href="edit">Change Status</a></td> -->
-					<td><button class="delivered"><a href="edit">View status</a></button></td>
-				</tbody>
+					<td><button class="delivered"><a href="edit.html">View status</a></button></td>
+				</tr>
 			</table>
-		</div>
-		
 	</main>
+</div>
+	
 
+	<footer>
+          <div class="footer">
+            <a href="homepage.html"><p>© 2018 Copyright:sendIT</p></a>
+          </div>
+        </footer>
+
+
+</html>
 	
 	<footer>
           <div class="footer">

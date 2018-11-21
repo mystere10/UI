@@ -35,13 +35,13 @@
       	<h1>Login</h1>
 
       	<div class="form">
-      		<form action="/event/login" method="POST">
+      		<form action="" method="POST">
       			<label>Username</label>
       				<input type="text" name="username" placeholder="Enter your username">
       			<label>Password</label>
       				<input type="password" name="password" placeholder="Enter your password">
 
-      				<input type="submit" name="submit" value="login" onclick="homepage.html">
+      				<input type="submit" name="submit" value="login" onclick="redirect()">
       		</form>
 
       	</div>
@@ -59,3 +59,9 @@
   </body>
 </html>
  
+
+ <script type="">
+    function redirect(){
+      window.open('customer.html');
+    }
+ </script>
