@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
 	<title>Admin</title>
 </head>
 <body>
@@ -24,6 +24,11 @@
 
   	<nav class="s-sidebar__nav">
      <ul>
+     	<li>
+           <a class="s-sidebar__nav-link" href="customer.html"">
+             <em>Home</em>
+           </a>
+        </li>
         <li>
            <a class="s-sidebar__nav-link" href="makeorder.html"">
              <em>Make order</em>
@@ -50,6 +55,7 @@
 					<th>Phone Number</th>
 					<th>Price</th>
 					<th>Status</th>
+					<th>Cancel</th>
 				</tr>
 
 				<tr>
@@ -60,7 +66,8 @@
 					<td>101 Kigali</td>
 					<td>0782132164</td>
 					<td>2000Rwf</td>
-					<td><button class="delivered">Delivered</button></td>
+					<td><button class="transit">Delivered</button></td>
+					<td><button class="cancel" onclick="cancel()">Cancel</button></td>
 				</tr>
 			</table>
 		</div>
@@ -70,8 +77,16 @@
 	
 	<footer>
           <div class="footer">
-            <a href="homepage.html"><p>© 2018 Copyright:sendIT</p></a>
+            <a href="index.html"><p>© 2018 Copyright:sendIT</p></a>
           </div>
     </footer>
 </body>
 </html>
+
+<script type="text/javascript">
+	
+
+	function cancel(){
+		alert('Are you sure!');
+	}
+</script>
